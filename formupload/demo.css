@@ -1,0 +1,10 @@
+    .ipt {
+        width: 300px;
+    }
+    label {
+        width: 130px;
+        display: block;
+    }
+    ul li {
+        list-style:none;
+    }

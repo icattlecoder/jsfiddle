@@ -70,4 +70,4 @@ $(document).ready(function(){
         	console&&console.log("form input error");
         }
     })
-})()
+})

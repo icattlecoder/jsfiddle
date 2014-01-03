@@ -20,7 +20,7 @@
  *	* 3. 提pr
  *   **********************************************************************************
  */
-$(function() {
+$(document).ready(function(){
     var Qiniu_UploadUrl = "http://up.qiniu.com";
     $("#btn_upload").click(function() {
         //普通上传

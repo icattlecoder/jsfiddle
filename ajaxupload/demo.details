@@ -1,0 +1,7 @@
+---
+name: 七牛云存储 | 上传凭证
+description: 七牛云存储上凭证生成演示
+authors:
+  - Qiniu
+resources:
+  - http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css

@@ -1,9 +1,0 @@
----
-name: 七牛云存储 | 上传凭证
-description: 七牛云存储上凭证生成演示
-authors:
-  - Qiniu
-resources:
-  - http://qtestbucket.qiniudn.com/demo/ext/resources/ext-theme-neptune/ext-theme-neptune-all.css
-  - http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha1.js
-  - http://crypto-js.googlecode.com/svn/tags/3.1.2/build/components/enc-base64-min.js

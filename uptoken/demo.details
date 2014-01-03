@@ -5,4 +5,5 @@ authors:
   - Qiniu
 resources:
   - http://qtestbucket.qiniudn.com/demo/ext/resources/ext-theme-neptune/ext-theme-neptune-all.css
-  - https://raw.github.com/icattlecoder/jsfiddle/master/uptoken/CryptoJS.js
+  - http://crypto-js.googlecode.com/svn/tags/3.1.2/build/components/enc-base64-min.js
+  - http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha1.js

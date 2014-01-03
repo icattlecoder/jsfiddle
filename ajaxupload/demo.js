@@ -24,7 +24,6 @@ $(document).ready(function() {
     var Qiniu_UploadUrl = "http://up.qiniu.com";
     var progressbar = $("#progressbar"),
         progressLabel = $(".progress-label");
-
     progressbar.progressbar({
         value: false,
         change: function() {
@@ -68,6 +67,8 @@ $(document).ready(function() {
                 if (xhr.readyState == 4 && xhr.status == 200 && xhr.responseText != "") {
                     var blkRet = JSON.parse(xhr.responseText);
                     console && console.log(blkRet);
+                    $("#dialog").html(xhr.responseText).dialog();
+                    //$("#dialog").dialog();
                 } else if (xhr.status != 200 && xhr.responseText) {
 
                 }

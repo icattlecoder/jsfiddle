@@ -63,7 +63,7 @@ $(function() {
             startDate = new Date().getTime();
             xhr.send(formData);
         };
-        var token = $("$token").value;
+        var token = $("#token").value;
         if ($("#file").files.length > 0 && token != "") {
             Qiniu_upload($("#file").files[0], token, $("#key").value);
         }else{

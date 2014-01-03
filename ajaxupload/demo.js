@@ -16,8 +16,8 @@
  *  * 贡献代码：
  *  * 1. git clone git@github.com:icattlecoder/jsfiddle
  *  * 2. push代码到您的github库
- *   * 2. 测试效果，访问 http://jsfiddle.net/gh/get/extjs/4.2.0/<Your GitHub Name>/jsfiddle/tree/master/<Demo Name>
- *  * 3. 提pr
+ *  * 3. 测试效果，访问 http://jsfiddle.net/gh/get/jquery/1.9.1/<Your GitHub Name>/jsfiddle/tree/master/ajaxupload
+ *  * 4. 提pr
  *   **********************************************************************************
  */
 $(document).ready(function() {
@@ -68,7 +68,6 @@ $(document).ready(function() {
                     var blkRet = JSON.parse(xhr.responseText);
                     console && console.log(blkRet);
                     $("#dialog").html(xhr.responseText).dialog();
-                    //$("#dialog").dialog();
                 } else if (xhr.status != 200 && xhr.responseText) {
 
                 }

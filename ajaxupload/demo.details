@@ -4,4 +4,5 @@ description: 七牛云存储上凭证生成演示
 authors:
   - Qiniu
 resources:
+  - //code.jquery.com/ui/1.10.3/jquery-ui.js
   - http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css

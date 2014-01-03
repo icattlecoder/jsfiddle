@@ -22,6 +22,18 @@
  */
 $(document).ready(function() {
     var Qiniu_UploadUrl = "http://up.qiniu.com";
+    var progressbar = $("#progressbar"),
+        progressLabel = $(".progress-label");
+
+    progressbar.progressbar({
+        value: false,
+        change: function() {
+            progressLabel.text(progressbar.progressbar("value") + "%");
+        },
+        complete: function() {
+            progressLabel.text("Complete!");
+        }
+    });
     $("#btn_upload").click(function() {
         //普通上传
         var Qiniu_upload = function(f, token, key) {
@@ -47,12 +59,9 @@ $(document).ready(function() {
                         formatSpeed = uploadSpeed.toFixed(2) + "Kb\/s";
                     }
                     var percentComplete = Math.round(evt.loaded * 100 / evt.total);
-                    $("#progressbar").progressbar({
-                        value: percentComplete
-                    });
+                    progressbar.progressbar("value", percentComplete);
                     // console && console.log(percentComplete, ",", formatSpeed);
                 }
-
             }, false);
 
             xhr.onreadystatechange = function(response) {
@@ -64,11 +73,12 @@ $(document).ready(function() {
                 }
             };
             startDate = new Date().getTime();
+            $("#progressbar").show();
             xhr.send(formData);
         };
-        var token = $("#token").value;
+        var token = $("#token").val();
         if ($("#file")[0].files.length > 0 && token != "") {
-            Qiniu_upload($("#file")[0].files[0], token, $("#key").value);
+            Qiniu_upload($("#file")[0].files[0], token, $("#key").val());
         } else {
             console && console.log("form input error");
         }

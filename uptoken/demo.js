@@ -403,8 +403,6 @@ Ext.onReady(function() {
                 var expire = Ext.getCmp("txt_deadline").getValue();
                 var deadline = Math.round(new Date().getTime() / 1000) + expire * 3600
                 policy.deadline = deadline;
-                policy.fsizeLimit = 1024 * 1024 * 5;
-                policy.mimeLimit = "image/*";
                 token = genToken(accessKey, secretKey, policy);
                 Ext.getCmp("token_res").expand()
                 console && console.log("token=", token);
